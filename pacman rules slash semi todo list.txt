@@ -1,0 +1,14 @@
+dots: 240 of them, worth 10 pts each
+powpel: worth 50pts each
+fruit: appears after 70 dots and again at 170
+	cherry: 100 pts (level 1)
+	strawberry: 300 pts (level 2)
+	orange: 500 pts (level 3)
+ghosts, pointwise: doubles per ghost
+	first ghost = 200 points
+	second ghost = 400
+	third ghost = 800
+	fourth ghost = 1600
+1up occurs at 10,000 points
+no point loss for life loss
+this is all easily implementable

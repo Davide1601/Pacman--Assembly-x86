@@ -1,0 +1,81 @@
+text debug
+at index (23,8); press 'a'
+champ_x = 23
+champ_xnew = 23
+champ_y = 8
+champ_ynew = 7
+CHECKROW EXECUTES:
+	cl = 8
+	esi = 0
+	al = #
+	cl--, esi++
+	cl = 7
+	esi = 1
+	al = *
+	cl--,esi++
+	cl = 6
+	esi = 2
+	al = .
+	cl--, esi++
+	cl = 5
+	esi = 3
+	al = .
+	cl--, esi++
+	cl = 4
+	esi = 4
+	al = #
+	cl--, esi++
+	cl = 3
+	esi = 5
+	al = #
+	cl--, esi++
+	cl = 2
+	esi = 6
+	al = .
+	cl--, esi++
+	esi = 7
+	al = .
+loop exits, cmp al, '#' does not set zero flag
+jnz isntWall
+champ_x = 23
+champ_y = 7
+prints champ at index (23,7)
+
+at index (23,7); press 'a'
+champ_x = 23
+champ_xnew = 23
+champ_y = 7
+champ_ynew = 6
+CHECKROW EXECUTES:
+	cl = 7
+	esi = 0
+	al = #
+	cl--, esi++
+	cl = 6
+	esi = 1
+	al = *
+	cl--,esi++
+	cl = 5
+	esi = 2
+	al = .
+	cl--, esi++
+	cl = 4
+	esi = 3
+	al = .
+	cl--, esi++
+	cl = 3
+	esi = 4
+	al = #
+	cl--, esi++
+	cl = 2
+	esi = 5
+	al = #
+	cl--, esi++
+	cl = 1
+	esi = 6
+	al = .
+loop exits
+cmp al, '#' does not set zero flag
+jnz isntWall
+champ_x = 23
+champ_y = 6
